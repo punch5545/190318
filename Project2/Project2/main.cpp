@@ -19,7 +19,9 @@ int main() {
 		case 1:
 			printf("Input String : ");
 			scanf("%s", str1);
-			printf("Length : %d\n", strLength(str1));
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+			printf("Length : %dbyte\n", strLength(str1));
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 			break;
 		case 2:
 			printf("Input First String : ");
